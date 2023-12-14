@@ -169,27 +169,27 @@ cron job time 1:00 AM
 filter by date 
 
 *	**Yudet Admin**
-*	**Overview** - Dashboard, Time series charts api
-*	**ManageAccount** - Shows all yudget user (i.e admin) that has been sign-up on the website. api<br />
+*	**Overview** - Dashboard, Time series charts API
+*	**ManageAccount** - Shows all yudget user (i.e. admin) that has been sign-up on to the website. api<br />
   Operation: view | edit | add | delete | active/de-active admin accounts api
 *	**Manage Company**
-    * **New Listing** – shows details of vehicle companies created during sign-up on Yudget website by the user or through the Add Vehicle Company by admin user.<br />
+    * **New Listing** – shows details of vehicle companies created during sign-up on the Yudget website by the user or through the Add Vehicle Company by admin user.<br />
     Operation: view | edit | add | delete | active/de-active | approve/reject
-    *	**Manage Branch** – show detail of branches created by the all vehicle company user.<br />
-      Operation api: view | delete | active/de-active branch
-    *	**Manage Car** – shows details of all the car added by the all vehicle company user.<br />
-      Operation api : view | delete | Mass Upload | active/de-active car
+    *	**Manage Branch** – show details of branches created by the all vehicle company user.<br />
+      Operation API: view | delete | active/de-active branch
+    *	**Manage Car** – shows details of all the cars added by the all-vehicle company user.<br />
+      Operation API : view | delete | Mass Upload | active/de-active car
     *	**Credit for Company** – manage Vehicle company user credits.<br />
-      Operation: transfer credit to user, reset the entire line-up credit for user
+      Operation: transfer credit to the user, reset the entire line-up credit for the user
 *	**Manage Gas Station**
-    *	**New Listing** – shows detail of gas company added by the admin.<br />
-      Operation api: view | edit | add | delete | active/de-active
-    *	**Gas Station** – shows detail of gas station of all the respective gas companies.<br />
-      Operation api: view | edit | add | delete | active/de-active | Mass Upload
-    *	**Fuel Price** – shows all fuel type, it's prices, common VAT, package commission based on fleet size.<br />
-      Operation api: view | edit | add | delete fuel type, view | edit default fee, view | edit | add | delete package
+    *	**New Listing** – shows details of the gas company added by the admin.<br />
+      Operation API: view | edit | add | delete | active/de-active
+    *	**Gas Station** – shows details of gas stations of all the respective gas companies.<br />
+      Operation API: view | edit | add | delete | active/de-active | Mass Upload
+    *	**Fuel Price** – shows all fuel types, their prices, common VAT, and package commission based on fleet size.<br />
+      Operation API: view | edit | add | delete fuel type, view | edit default fee, view | edit | add | delete package
 *	**Manage Website** - Manage content on the [Yudget](www.yudget.net) Home panel
 *	**New Enquiry** – Enquiry from user home website & mobile support 
 *	**Notification** – Send notification to user
-*	**Report** – Admin will be able to view all the data generated through various reports i.e Company Summary, Company Spend, Gas Station Summary & Gas Stations Sale.
+*	**Report** – Admin will be able to view all the data generated through various reports i.e. Company Summary, Company Spend, Gas Station Summary & Gas Stations Sale.
  
