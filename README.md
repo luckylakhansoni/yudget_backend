@@ -1,0 +1,195 @@
+## Yudget backend 
+Yudget backend Api  built in Node.js and Mysql Database on the latest version of the Yudget Api design to help Yudget all feature to alter and create new features the [Yudget](www.api.yudget.net) api server, monitor the actions of the vehicle companies & the gas station companies.
+
+## Table of Contents
+
+* [Version](#versions)
+* [Quick Start](#quick-start)
+* [File Structure](#file-structure)
+* [Features](#feature)
+* [Documentation](#documentation)
+
+## Versions
+
+Node js -  > 13   
+Mysql - 5.0.1  
+
+## Quick start
+
+### Using Node
+
+1. Make sure you have [Node js](https://nodejs.org/) installed.
+2. After installing `Node js`, open a terminal and run `npm install` in the main folder to download all project dependencies.
+
+```
+Node js install
+```
+
+3. Then start the app in development mode by running the following command in terminal:
+
+```
+npm start
+```
+
+4. Open [http://localhost:5000](http://localhost:5000) to view it in the browser or postman. 
+
+
+
+## File Structure
+
+Within the download you'll find the following directories and files:
+
+```
+Yudget Backend folder
+.
+├── README.md
+├── package-lock.json
+├── package.json
+├── config
+│   ├──  db.config.js
+├── controllers
+│   ├──  admin.controller.js
+│   ├──  users.controllers.js
+│   ├──   station.controllers.js
+├──  DOM
+│   ├──   about.dom.js
+│   ├──   admin-transaction.dom.js
+│   ├──   bill.dom.js
+│   ├──   branch.dom.js
+│   ├──   brand.dom.js
+│   ├──   car.dom.js
+│   ├──   carType.dom.js
+│   ├──   city.dom.js
+│   ├──  company.dom.js
+│   ├──   contactus.dom.js
+│   ├──   default_fee.dom.js
+│   ├──   district.dom.js
+│   ├──   emp.dom.js
+│   ├──   fuel_price.dom.js
+│   ├──   gas_company.dom.js
+│   ├──   getInTouch.dom.js
+│   ├──   homepage.dom.js
+│   ├──   image.dom.js
+│   ├──   invoice.dom.js
+│   ├──   network.dom.js
+│   ├──  notification.dom.js
+│   ├──   package.dom.js
+│   ├──   partner.dom.js
+│   ├──   payment.dom.js
+│   ├──  price.dom.js
+│   ├──   privacy.dom.js
+│   ├──   report.dom.js
+│   ├──   solution.dom.js
+│   ├──   stationEmp.dom.js
+│   ├──   transaction.dom.js
+│   ├──   users.dom.js
+│   ├──   vat_invoice.dom.js
+│   ├──   year.dom.js
+├── models
+│   ├──   admin-transaction.model.js
+│   ├──   bill.model.js
+│   ├──   branch.model.js
+│   ├──   brand.model.js
+│   ├──   car.model.js
+│   ├──   carType.model.js
+│   ├──   city.model.js
+│   ├──  company.model.js
+│   ├──   contactus.model.js
+│   ├──   default_fee.model.js
+│   ├──   district.model.js
+│   ├──   emp.model.js
+│   ├──   fuel_price.model.js
+│   ├──   gas_company.model.js
+│   ├──   getInTouch.model.js
+│   ├──   homepage.model.js
+│   ├──   image.model.js
+│   ├──   invoice.model.js
+│   ├──   network.model.js
+│   ├──  notification.model.js
+│   ├──   package.model.js
+│   ├──   partner.model.js
+│   ├──   payment.model.js
+│   ├──  price.model.js
+│   ├──   privacy.model.js
+│   ├──   report.model.js
+│   ├──   solution.model.js
+│   ├──   stationEmp.model.js
+│   ├──   transaction.model.js
+│   ├──   users.model.js
+│   ├──   vat_invoice.model.js
+│   ├──   year.model.js
+├──  public
+│   ├──  images
+│   ├──  pdf
+├──  routes
+│   ├──   admin.route
+│   ├──   users.route
+│   ├──   mobile.route
+│   ├──   home.route
+├──  utils
+│   ├──   constant.js
+│   ├──   email.js
+│   ├──   helper.js
+│   ├──   cronJobs.js
+├──  validation
+│   ├──   users.js
+│   ├──   mobile.js
+│   ├──     admin.js
+server.js
+readme.md
+.gitignore
+```
+
+## Features
+
+*	**website content management api** -  for website management content created crud operation show list accoding to the requirement
+*	**company admin** - create api for company admin for register. login, forget password dashboaord api<br />
+*	**branch user** - create api  for register. login, forget password dashboaord api.<br />
+  Operation: view | edit | add | delete | active/de-active admin accounts
+*	**Company admin**
+    * **branch** – shows details of branch list. edit and save and creatte new branch <br />
+    Operation: view | edit | change status 
+    *	**vehicle** – show detail of vehicle list create new vechiel and mass upload .<br />
+    *	**Manage employee** – add new eemployee |  mass upload  | list of all emp api <br />
+    	send email for selected employee
+    *	**bulk edit** –  transfer balance to branches individual or bulk. transfer balance to vehicle individual or bulk<br />
+      Operation: view | transfer 
+*	**reports** –  list for consumption and transaction report api<br />
+filter by date 
+*	**bills** –  list for bill api , list of invoice  (generate evert month first day), list of vat_invoice (generate evert month first day) by the cron job <br />
+cron job time 1:00 AM 
+
+*	**Branch user**
+    * **branch** – shows details of branch . edit and save <br />
+    Operation: view | edit | change status 
+    *	**vehicle** – show detail of vehicle list create new vechiel and mass upload .<br />
+    *	**bulk edit** –  transfer balance to vehicle individual or bulk<br />
+      Operation: view | transfer 
+*	**reports** –  list for consumption and transaction report api<br />
+filter by date 
+
+*	**Yudet Admin**
+*	**Overview** - Dashboard, Time series charts api
+*	**ManageAccount** - Shows all yudget user (i.e admin) that has been sign-up on the website. api<br />
+  Operation: view | edit | add | delete | active/de-active admin accounts api
+*	**Manage Company**
+    * **New Listing** – shows details of vehicle companies created during sign-up on Yudget website by the user or through the Add Vehicle Company by admin user.<br />
+    Operation: view | edit | add | delete | active/de-active | approve/reject
+    *	**Manage Branch** – show detail of branches created by the all vehicle company user.<br />
+      Operation api: view | delete | active/de-active branch
+    *	**Manage Car** – shows details of all the car added by the all vehicle company user.<br />
+      Operation api : view | delete | Mass Upload | active/de-active car
+    *	**Credit for Company** – manage Vehicle company user credits.<br />
+      Operation: transfer credit to user, reset the entire line-up credit for user
+*	**Manage Gas Station**
+    *	**New Listing** – shows detail of gas company added by the admin.<br />
+      Operation api: view | edit | add | delete | active/de-active
+    *	**Gas Station** – shows detail of gas station of all the respective gas companies.<br />
+      Operation api: view | edit | add | delete | active/de-active | Mass Upload
+    *	**Fuel Price** – shows all fuel type, it's prices, common VAT, package commission based on fleet size.<br />
+      Operation api: view | edit | add | delete fuel type, view | edit default fee, view | edit | add | delete package
+*	**Manage Website** - Manage content on the [Yudget](www.yudget.net) Home panel
+*	**New Enquiry** – Enquiry from user home website & mobile support 
+*	**Notification** – Send notification to user
+*	**Report** – Admin will be able to view all the data generated through various reports i.e Company Summary, Company Spend, Gas Station Summary & Gas Stations Sale.
+ 
