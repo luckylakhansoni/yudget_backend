@@ -19,10 +19,10 @@ Mysql - 5.0.1
 ### Using Node
 
 1. Make sure you have [Node js](https://nodejs.org/) installed.
-2. After installing `Node js`, open a terminal and run `npm install` in the main folder to download all project dependencies.
+2. After installing `Node js`, open a terminal and run `npm install` in the main folder to download all dependencies.
 
 ```
-Node js install
+npm -i
 ```
 
 3. Then start the app in development mode by running the following command in terminal:
@@ -147,7 +147,7 @@ readme.md
 *	**branch user** - create api  for register. login, forget password dashboaord api.<br />
   Operation: view | edit | add | delete | active/de-active admin accounts
 *	**Company admin**
-    * **branch** – shows details of branch list. edit and save and creatte new branch <br />
+    * **branch** – shows details of branch list. edit and save and create new branch <br />
     Operation: view | edit | change status 
     *	**vehicle** – show detail of vehicle list create new vechiel and mass upload .<br />
     *	**Manage employee** – add new eemployee |  mass upload  | list of all emp api <br />
